@@ -1,3 +1,5 @@
+**See [this Reddit post](https://www.reddit.com/r/MinecraftChampionship/comments/pd2moc/a_mathematical_model_that_gives_the_probability/) for (some kind of) documentation.**
+
 The following table lists the probability that a player gets first place in the individual standings. Do NOT use this to predict team standings.
 
 I don't know how to make websites, I'm just copy-pasting the results I get from the model.
