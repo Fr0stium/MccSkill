@@ -43,9 +43,6 @@ namespace MccSkill
                 Player player = new(username, coinHistory);
                 PlayerList.Add(player);
             }
-
-            Player virtualPlayer = new(null, null);
-            PlayerList.Add(virtualPlayer);
         }
 
         /// <summary>
@@ -118,14 +115,9 @@ namespace MccSkill
                 double skillSum = skillLevels.Sum();
                 for (int i = 0; i < skillLevels.Length; i++) skillLevels[i] /= skillSum;
             }
-
-            // Store the virtual player's skill level, and get rid of it from the leaderboard.
-
-            double virtualPlayerSkill = skillLevels[^1];
-            skillLevels[^1] = 0;
-
+            
             for (int i = 0; i < skillLevels.Length; i++)
-                PlayerList[i].Skill = skillLevels[i] / (1 - virtualPlayerSkill);
+                PlayerList[i].Skill = skillLevels[i];
         }
     }
 }

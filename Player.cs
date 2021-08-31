@@ -38,8 +38,8 @@ namespace MccSkill
 
             if (Username == null || opponent.Username == null) return (1, 1);
 
-            double wins = 0;
-            double losses = 0;
+            double wins = 1.0 / BradleyTerry.PlayerList.Count;
+            double losses = 1.0 / BradleyTerry.PlayerList.Count;
 
             for (int i = 1; i <= BradleyTerry.MccCount; i++)
             {
