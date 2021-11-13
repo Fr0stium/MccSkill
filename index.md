@@ -4,7 +4,7 @@ The following table lists the probability that a player gets first place in the 
 
 I don't know how to make websites, I'm just copy-pasting the results I get from the model.
 
-**Last updated: November 13, 2021 (MCC 18)**
+**Last updated: November 13, 2021 (MCC All Stars)**
 
 | Rank | Player             | Chance of First Place | Odds of First Place | Percent Change from last MCC |
 |------|--------------------|-----------------------|---------------------|------------------------------|
