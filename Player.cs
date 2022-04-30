@@ -10,14 +10,9 @@ namespace MccSkill
             CoinHistory = coinHistory;
         }
 
-        private string Username { get; }
+        public string Username { get; }
         private List<int> CoinHistory { get; }
         public double Skill { get; set; }
-
-        public override string ToString()
-        {
-            return Username == null ? string.Empty : $"{Username}, {Skill}";
-        }
 
         /// <summary>
         ///     Gets how many coins the player got in an MCC.
