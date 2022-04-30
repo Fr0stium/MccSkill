@@ -8,7 +8,10 @@ namespace MccSkill
         private static void Main()
         {
             BradleyTerry.GenerateSkillLevels();
-            foreach (var player in BradleyTerry.PlayerList.OrderByDescending(p => p.Skill)) Console.WriteLine(player);
+            foreach (var player in BradleyTerry.PlayerList.OrderByDescending(p => p.Skill))
+            {
+                Console.WriteLine($"{player.Username}, {player.Skill}");
+            }
         }
     }
 }
