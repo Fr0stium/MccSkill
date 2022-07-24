@@ -2,7 +2,7 @@
 
 The following table lists the probability that a player gets first place in the individual standings. Do NOT use this to predict team standings.
 
-**Last updated: July 24, 2022 (Pride 2022)**
+**Last updated: July 24, 2022 (MCC 23)**
 
 | Rank | Player             | Chance of First Place | Odds of First Place | Percent Change from last MCC |
 | ---- | ------------------ | --------------------- | ------------------- | ---------------------------- |
