@@ -7,7 +7,7 @@ namespace MccSkill
     public static class BradleyTerry
     {
         // Number of MCCs.
-        public const int MccCount = 30;
+        public const int MccCount = 31;
 
         // List of players that have played in an MCC.
         public static readonly List<Player> PlayerList = new();
