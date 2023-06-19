@@ -1,199 +1,149 @@
 [GitHub](https://github.com/02Naitsirk/MccSkill) / [Documentation](https://www.reddit.com/r/MinecraftChampionship/comments/pd2moc/a_mathematical_model_that_gives_the_probability/)
 
-The following table lists the probability that a player gets first place in the individual standings. Do NOT use this to predict team standings.
+**Last updated: June 19, 2023 (MCC 31)**
 
-**Last updated: November 12, 2022 (MCC 27)**
-
-| Rank | Player             | Chance of First Place | Odds of First Place | % Change in Win Probability |
-|------|--------------------|-----------------------|---------------------|-----------------------------|
-| 1    | fruitberries       | 8.50%                 | 1 in 12             | -5%                         |
-| 2    | Illumina           | 8.37%                 | 1 in 12             | -5%                         |
-| 3    | Purpled            | 7.70%                 | 1 in 13             | -5%                         |
-| 4    | Technoblade        | 7.24%                 | 1 in 14             | -6%                         |
-| 5    | Sapnap             | 6.99%                 | 1 in 14             | -5%                         |
-| 6    | Quig               | 6.61%                 | 1 in 15             | -6%                         |
-| 7    | Dream              | 5.65%                 | 1 in 18             | -5%                         |
-| 8    | PeteZahHutt        | 5.55%                 | 1 in 18             | -5%                         |
-| 9    | FireBreathMan      | 4.41%                 | 1 in 23             | +0%                         |
-| 10   | Punz               | 4.30%                 | 1 in 23             | -5%                         |
-| 11   | Antfrost           | 2.54%                 | 1 in 39             | -5%                         |
-| 12   | jojosolos          | 2.22%                 | 1 in 45             | -4%                         |
-| 13   | Fundy              | 2.11%                 | 1 in 47             | -6%                         |
-| 14   | Krtzy              | 1.91%                 | 1 in 52             | -6%                         |
-| 15   | HBomb94            | 1.90%                 | 1 in 53             | -5%                         |
-| 16   | Vikkstar123        | 1.67%                 | 1 in 60             | -6%                         |
-| 17   | JCtheCaster        | 1.14%                 | 1 in 87             | -7%                         |
-| 18   | TapL               | 1.13%                 | 1 in 89             | -5%                         |
-| 19   | SB737              | 1.01%                 | 1 in 99             | -6%                         |
-| 20   | GeorgeNotFound     | 0.99%                 | 1 in 101            | -5%                         |
-| 21   | Seapeekay          | 0.97%                 | 1 in 103            | -5%                         |
-| 22   | Mefs               | 0.79%                 | 1 in 127            | -6%                         |
-| 23   | hannahxxrose       | 0.79%                 | 1 in 127            | +26%                        |
-| 24   | Calvin             | 0.77%                 | 1 in 130            | -6%                         |
-| 25   | TommyInnit         | 0.70%                 | 1 in 142            | -6%                         |
-| 26   | Ph1LzA             | 0.67%                 | 1 in 149            | -6%                         |
-| 27   | Krinios            | 0.61%                 | 1 in 165            | -6%                         |
-| 28   | Tubbo_             | 0.60%                 | 1 in 167            | -5%                         |
-| 29   | Smajor1995         | 0.58%                 | 1 in 173            | -6%                         |
-| 30   | FlorianFunke       | 0.57%                 | 1 in 174            | -7%                         |
-| 31   | Ranboo             | 0.54%                 | 1 in 185            | -2%                         |
-| 32   | CaptainSparklez    | 0.53%                 | 1 in 187            | -6%                         |
-| 33   | 5uppps             | 0.46%                 | 1 in 215            | -5%                         |
-| 34   | FoolishG           | 0.44%                 | 1 in 229            | +8%                         |
-| 35   | Bitzel             | 0.41%                 | 1 in 245            | -6%                         |
-| 36   | Smallishbeans      | 0.38%                 | 1 in 265            | -6%                         |
-| 37   | TBNRfrags          | 0.37%                 | 1 in 271            | -6%                         |
-| 38   | ryguyrocky         | 0.35%                 | 1 in 282            | -6%                         |
-| 39   | InTheLittleWood    | 0.27%                 | 1 in 366            | -6%                         |
-| 40   | fWhip              | 0.27%                 | 1 in 372            | -6%                         |
-| 41   | ItzMasayoshi       | 0.27%                 | 1 in 376            | +0%                         |
-| 42   | awesamdude         | 0.25%                 | 1 in 395            | -0%                         |
-| 43   | Rafessor           | 0.25%                 | 1 in 396            | -7%                         |
-| 44   | Wisp               | 0.25%                 | 1 in 407            | -6%                         |
-| 45   | Grian              | 0.23%                 | 1 in 430            | -6%                         |
-| 46   | Iskall85           | 0.23%                 | 1 in 437            | -7%                         |
-| 47   | BadBoyHalo         | 0.23%                 | 1 in 439            | -5%                         |
-| 48   | Sneegsnag          | 0.22%                 | 1 in 445            | -5%                         |
-| 49   | Not_iiTzTimmy      | 0.22%                 | 1 in 455            | +0%                         |
-| 50   | WilburSoot         | 0.19%                 | 1 in 539            | -6%                         |
-| 51   | King_Burren        | 0.17%                 | 1 in 581            | -7%                         |
-| 52   | Ponk               | 0.16%                 | 1 in 616            | +17%                        |
-| 53   | SpiffingBrit       | 0.15%                 | 1 in 650            | -15%                        |
-| 54   | PearlescentMoon    | 0.15%                 | 1 in 678            | +1%                         |
-| 55   | SolidarityGaming   | 0.14%                 | 1 in 706            | -7%                         |
-| 56   | boxbox22           | 0.13%                 | 1 in 766            | +0%                         |
-| 57   | Skeppy             | 0.12%                 | 1 in 813            | -6%                         |
-| 58   | DanTDM             | 0.12%                 | 1 in 817            | -26%                        |
-| 59   | sylvee_            | 0.12%                 | 1 in 823            | -6%                         |
-| 60   | Graser10           | 0.12%                 | 1 in 849            | -10%                        |
-| 61   | CaptainPuffy       | 0.12%                 | 1 in 853            | -7%                         |
-| 62   | KreekCraft         | 0.12%                 | 1 in 853            | -22%                        |
-| 63   | QuirkyFace         | 0.11%                 | 1 in 877            | -16%                        |
-| 64   | Blushi             | 0.11%                 | 1 in 888            | +26%                        |
-| 65   | JeromeASF          | 0.11%                 | 1 in 935            | -9%                         |
-| 66   | cubfan135          | 0.11%                 | 1 in 947            | -6%                         |
-| 67   | ShubbleYT          | 0.10%                 | 1 in 977            | -6%                         |
-| 68   | Michaelmcchill     | 0.10%                 | 1 in 1,024          | -7%                         |
-| 69   | falsesymmetry      | 0.10%                 | 1 in 1,034          | -6%                         |
-| 70   | impulseSV          | 0.09%                 | 1 in 1,057          | +0%                         |
-| 71   | AntVenom           | 0.09%                 | 1 in 1,104          | +38%                        |
-| 72   | JackManifoldTV     | 0.09%                 | 1 in 1,133          | -24%                        |
-| 73   | Ravs               | 0.09%                 | 1 in 1,159          | -16%                        |
-| 74   | GeminiTay          | 0.08%                 | 1 in 1,254          | -5%                         |
-| 75   | RedVelvetCake      | 0.08%                 | 1 in 1,288          | -7%                         |
-| 76   | F1NN5TER           | 0.08%                 | 1 in 1,317          | -6%                         |
-| 77   | KaraCorvus         | 0.07%                 | 1 in 1,390          | -3%                         |
-| 78   | Amadeus_Fink       | 0.07%                 | 1 in 1,510          | -17%                        |
-| 79   | DisguisedToast1    | 0.06%                 | 1 in 1,686          | +0%                         |
-| 80   | MiniMuka           | 0.06%                 | 1 in 1,727          | -8%                         |
-| 81   | OrionSound         | 0.06%                 | 1 in 1,760          | -7%                         |
-| 82   | Jameskii           | 0.06%                 | 1 in 1,779          | -10%                        |
-| 83   | KarlJacobs         | 0.06%                 | 1 in 1,809          | -6%                         |
-| 84   | Slimecicle         | 0.05%                 | 1 in 1,843          | -5%                         |
-| 85   | Honeydew           | 0.05%                 | 1 in 1,943          | -17%                        |
-| 86   | Spifey             | 0.05%                 | 1 in 1,947          | -7%                         |
-| 87   | Renthedog          | 0.05%                 | 1 in 2,017          | -8%                         |
-| 88   | vGumiho            | 0.05%                 | 1 in 2,070          | +8%                         |
-| 89   | The_Eret           | 0.05%                 | 1 in 2,079          | -7%                         |
-| 90   | Snifferish         | 0.04%                 | 1 in 2,281          | -3%                         |
-| 91   | aimsey             | 0.04%                 | 1 in 2,393          | -1%                         |
-| 92   | GizzyGazza         | 0.04%                 | 1 in 2,401          | -28%                        |
-| 93   | Breeh              | 0.04%                 | 1 in 2,480          | -17%                        |
-| 94   | GoodTimeWIthScar   | 0.04%                 | 1 in 2,523          | -3%                         |
-| 95   | iJevin             | 0.04%                 | 1 in 2,585          | -10%                        |
-| 96   | KryticZeuz         | 0.04%                 | 1 in 2,687          | -8%                         |
-| 97   | Wolv21             | 0.03%                 | 1 in 3,127          | -11%                        |
-| 98   | LividCoffee        | 0.03%                 | 1 in 3,145          | -18%                        |
-| 99   | BaboAbe            | 0.03%                 | 1 in 3,161          | +0%                         |
-| 100  | GeeNelly           | 0.03%                 | 1 in 3,237          | +1%                         |
-| 101  | Magistrex          | 0.03%                 | 1 in 3,516          | -38%                        |
-| 102  | Quackity           | 0.03%                 | 1 in 3,611          | -8%                         |
-| 103  | Jestanii           | 0.03%                 | 1 in 3,704          | -12%                        |
-| 104  | KatherineElizabeth | 0.03%                 | 1 in 3,778          | -10%                        |
-| 105  | TankMatt           | 0.03%                 | 1 in 3,796          | -11%                        |
-| 106  | ElainaExe          | 0.03%                 | 1 in 3,809          | -2%                         |
-| 107  | Xephos             | 0.03%                 | 1 in 3,969          | -18%                        |
-| 108  | BdoubleO100        | 0.02%                 | 1 in 4,400          | +0%                         |
-| 109  | yammy_xox          | 0.02%                 | 1 in 4,763          | -13%                        |
-| 110  | Hrry               | 0.02%                 | 1 in 4,994          | -18%                        |
-| 111  | LDShadowLady       | 0.02%                 | 1 in 5,062          | -14%                        |
-| 112  | Wahzdah            | 0.02%                 | 1 in 5,672          | -13%                        |
-| 113  | Kkatamina_         | 0.02%                 | 1 in 5,710          | +0%                         |
-| 114  | BBPaws             | 0.02%                 | 1 in 6,031          | -14%                        |
-| 115  | VapeKit            | 0.02%                 | 1 in 6,168          | -9%                         |
-| 116  | Checkpoint         | 0.02%                 | 1 in 6,272          | -18%                        |
-| 117  | ludwigahgren       | 0.01%                 | 1 in 7,200          | -20%                        |
-| 118  | Pedguin            | 0.01%                 | 1 in 7,868          | -18%                        |
-| 119  | septicbooper       | 0.01%                 | 1 in 8,093          | -0%                         |
-| 120  | ItsJustOriah       | 0.01%                 | 1 in 8,304          | -9%                         |
-| 121  | ConnorEatsPants    | 0.01%                 | 1 in 9,213          | -6%                         |
-| 122  | ZoeyProasheck      | 0.01%                 | 1 in 9,871          | -18%                        |
-| 123  | Sqaishey           | 0.01%                 | 1 in 10,392         | -20%                        |
-| 124  | NettyPlays         | 0.01%                 | 1 in 10,886         | -14%                        |
-| 125  | Leozaur            | 0.01%                 | 1 in 12,392         | -18%                        |
-| 126  | JackSucksAtLife    | 0.01%                 | 1 in 13,777         | -15%                        |
-| 127  | Sykkuno            | 0.01%                 | 1 in 14,093         | +75%                        |
-| 128  | Daltos             | 0.01%                 | 1 in 15,577         | -18%                        |
-| 129  | Nihachu            | 0.01%                 | 1 in 16,733         | -11%                        |
-| 130  | CrankGameplays     | 0.01%                 | 1 in 17,598         | +3%                         |
-| 131  | Rhiannon           | 0.01%                 | 1 in 19,618         | -18%                        |
-| 132  | JamesTurner        | 0.00%                 | 1 in 24,247         | -13%                        |
-| 133  | Sherlock_Hulmes    | 0.00%                 | 1 in 24,768         | -18%                        |
-| 134  | GamerBurry         | 0.00%                 | 1 in 29,045         | -39%                        |
-| 135  | IHasCupquake       | 0.00%                 | 1 in 30,335         | -17%                        |
-| 136  | ChippyGaming       | 0.00%                 | 1 in 31,362         | -18%                        |
-| 137  | JamesDoesMining    | 0.00%                 | 1 in 37,351         | +0%                         |
-| 138  | JOEYGRACEFFA       | 0.00%                 | 1 in 39,000         | -37%                        |
-| 139  | NinaSerena         | 0.00%                 | 1 in 39,852         | -18%                        |
-| 140  | MysterySalesman    | 0.00%                 | 1 in 41,116         | -18%                        |
-| 141  | Lazarbeam          | 0.00%                 | 1 in 43,001         | -27%                        |
-| 142  | ItsValkyrae        | 0.00%                 | 1 in 43,945         | +152%                       |
-| 143  | LazarCodeLazar     | 0.00%                 | 1 in 45,155         | +7%                         |
-| 144  | Kontuz             | 0.00%                 | 1 in 45,447         | -12%                        |
-| 145  | LaurenZSide        | 0.00%                 | 1 in 49,245         | -15%                        |
-| 146  | DraconiteDragon    | 0.00%                 | 1 in 50,443         | -12%                        |
-| 147  | Zylush             | 0.00%                 | 1 in 50,846         | -18%                        |
-| 148  | ItsFunneh          | 0.00%                 | 1 in 50,946         | -57%                        |
-| 149  | VoiceoverPete      | 0.00%                 | 1 in 55,179         | -19%                        |
-| 150  | JamesCharles       | 0.00%                 | 1 in 57,642         | -17%                        |
-| 151  | Vixella            | 0.00%                 | 1 in 58,175         | -13%                        |
-| 152  | DraconiteDragon    | 0.00%                 | 1 in 50,443         | -12%                        |
-| 153  | Craigmeup          | 0.00%                 | 1 in 65,179         | -18%                        |
-| 154  | Yeetdaisie         | 0.00%                 | 1 in 66,264         | -12%                        |
-| 155  | RIPmika            | 0.00%                 | 1 in 69,608         | -23%                        |
-| 156  | Mousie             | 0.00%                 | 1 in 84,004         | -18%                        |
-| 157  | Muselk             | 0.00%                 | 1 in 89,383         | -29%                        |
-| 158  | Drgluon            | 0.00%                 | 1 in 94,084         | -14%                        |
-| 159  | Marielitai         | 0.00%                 | 1 in 97,690         | -20%                        |
-| 160  | iicBunnyx          | 0.00%                 | 1 in 98,379         | -12%                        |
-| 161  | NanoSounds         | 0.00%                 | 1 in 108,943        | -18%                        |
-| 162  | ToxxxicSupport     | 0.00%                 | 1 in 127,450        | -20%                        |
-| 163  | AyChristene        | 0.00%                 | 1 in 130,635        | -29%                        |
-| 164  | Bedgar             | 0.00%                 | 1 in 142,297        | -18%                        |
-| 165  | M4NGO              | 0.00%                 | 1 in 187,401        | -18%                        |
-| 166  | GoldenGlare        | 0.00%                 | 1 in 194,290        | -29%                        |
-| 167  | TeanaKitten        | 0.00%                 | 1 in 210,440        | +8%                         |
-| 168  | PEARLBYTEZ         | 0.00%                 | 1 in 238,032        | -12%                        |
-| 169  | DrSimonClark       | 0.00%                 | 1 in 249,172        | -18%                        |
-| 170  | GoldenGlare        | 0.00%                 | 1 in 194,290        | -29%                        |
-| 171  | PaintingRainbows   | 0.00%                 | 1 in 296,583        | -29%                        |
-| 172  | BobaWitch          | 0.00%                 | 1 in 335,019        | -18%                        |
-| 173  | Pokimane           | 0.00%                 | 1 in 400,940        | -12%                        |
-| 174  | AlexTheRambler     | 0.00%                 | 1 in 456,409        | -18%                        |
-| 175  | Farrantula         | 0.00%                 | 1 in 470,197        | -29%                        |
-| 176  | Rythian            | 0.00%                 | 1 in 631,639        | -18%                        |
-| 177  | PaintingRainbows   | 0.00%                 | 1 in 296,583        | -29%                        |
-| 178  | Roguskii           | 0.00%                 | 1 in 743,165        | -12%                        |
-| 179  | Plumbella          | 0.00%                 | 1 in 764,651        | -18%                        |
-| 180  | MikeChannell       | 0.00%                 | 1 in 788,803        | -29%                        |
-| 181  | BekkiBoom          | 0.00%                 | 1 in 891,041        | -18%                        |
-| 182  | Steph0sims         | 0.00%                 | 1 in 936,611        | -18%                        |
-| 183  | Geestargames       | 0.00%                 | 1 in 1,287,314      | -18%                        |
-| 184  | Janedouglas        | 0.00%                 | 1 in 1,450,916      | -29%                        |
-| 185  | Asnazum            | 0.00%                 | 1 in 1,656,818      | -13%                        |
-| 186  | Osiefish           | 0.00%                 | 1 in 1,917,743      | -18%                        |
-| 187  | Bouphe             | 0.00%                 | 1 in 2,977,054      | -18%                        |
-| 188  | Icklenellierose    | 0.00%                 | 1 in 3,199,484      | -28%                        |
-| 189  | BrionyKay          | 0.00%                 | 1 in 4,902,541      | -17%                        |
-| 190  | SquidGaming        | 0.00%                 | 1 in 8,869,107      | -17%                        |
-| 191  | FionaRiches        | 0.00%                 | 1 in 19,256,944     | -17%                        |
+| Rank | Player             | Skill  | Change |
+| ---- | ------------------ | ------ | ------ |
+| 1    | FireBreathMan      | 5.88   | ▲0.14  |
+| 2    | Wallibear          | 5.69   | 0.00   |
+| 3    | Purpled            | 5.40   | ▲0.15  |
+| 4    | jojosolos          | 4.73   | ▲0.04  |
+| 5    | Illumina           | 4.73   | ▼0.06  |
+| 6    | Sapnap             | 4.71   | ▲0.02  |
+| 7    | fruitberries       | 4.71   | ▼0.07  |
+| 8    | Technoblade        | 4.71   | ▼0.06  |
+| 9    | PeteZahHutt        | 4.55   | ▼0.04  |
+| 10   | Quig               | 4.54   | ▼0.06  |
+| 11   | Dream              | 4.30   | ▼0.06  |
+| 12   | Antfrost           | 3.89   | ▼0.06  |
+| 13   | Punz               | 3.89   | ▼0.17  |
+| 14   | Vikkstar123        | 3.75   | ▼0.07  |
+| 15   | Fundy              | 3.39   | ▼0.07  |
+| 16   | Krtzy              | 3.38   | ▼0.08  |
+| 17   | HBomb94            | 3.15   | ▼0.13  |
+| 18   | JCtheCaster        | 3.03   | ▼0.08  |
+| 19   | hannahxxrose       | 2.71   | ▲0.22  |
+| 20   | Mefs               | 2.67   | ▼0.07  |
+| 21   | Seapeekay          | 2.63   | ▼0.04  |
+| 22   | TapL               | 2.62   | ▼0.07  |
+| 23   | OllieGamerz        | 2.49   | 0.00   |
+| 24   | Calvin             | 2.40   | ▼0.07  |
+| 25   | Ph1LzA             | 2.35   | ▼0.05  |
+| 26   | Krinios            | 2.35   | ▲0.01  |
+| 27   | Ranboo             | 2.34   | ▼0.06  |
+| 28   | SB737              | 2.33   | ▼0.06  |
+| 29   | GeorgeNotFound     | 2.28   | ▼0.07  |
+| 30   | Tubbo_             | 2.23   | ▼0.06  |
+| 31   | TommyInnit         | 2.19   | ▼0.07  |
+| 32   | FlorianFunke       | 2.17   | ▼0.07  |
+| 33   | Smajor1995         | 1.99   | ▼0.11  |
+| 34   | CaptainSparklez    | 1.97   | ▼0.06  |
+| 35   | 5uppps             | 1.93   | ▼0.06  |
+| 36   | Bitzel             | 1.93   | ▼0.07  |
+| 37   | Smallishbeans      | 1.75   | ▼0.07  |
+| 38   | FoolishG           | 1.74   | ▼0.06  |
+| 39   | TBNRfrags          | 1.64   | ▼0.07  |
+| 40   | ryguyrocky         | 1.63   | ▼0.14  |
+| 41   | fWhip              | 1.55   | ▼0.07  |
+| 42   | CapitanGatoYT      | 1.55   | 0.00   |
+| 43   | ItzMasayoshi       | 1.41   | ▼0.01  |
+| 44   | Shadoune666        | 1.37   | ▲2.31  |
+| 45   | Rafessor           | 1.29   | ▼0.07  |
+| 46   | Iskall85           | 1.25   | ▼0.07  |
+| 47   | InTheLittleWood    | 1.22   | ▼0.07  |
+| 48   | awesamdude         | 1.22   | ▼0.05  |
+| 49   | Not_iiTzTimmy      | 1.20   | ▼0.01  |
+| 50   | Grian              | 1.19   | ▼0.07  |
+| 51   | Wisp               | 1.05   | ▼0.07  |
+| 52   | Sneegsnag          | 1.05   | ▼0.24  |
+| 53   | King_Burren        | 0.95   | ▼0.07  |
+| 54   | WilburSoot         | 0.83   | ▼0.07  |
+| 55   | Ponk               | 0.81   | ▼0.06  |
+| 56   | SolidarityGaming   | 0.70   | ▼0.06  |
+| 57   | JeromeASF          | 0.68   | ▼0.07  |
+| 58   | bekyamon           | 0.68   | ▼0.20  |
+| 59   | RedVelvetCake      | 0.65   | ▲0.46  |
+| 60   | boxbox22           | 0.63   | ▼0.01  |
+| 61   | cubfan135          | 0.55   | ▼0.01  |
+| 62   | Graser10           | 0.52   | ▼0.06  |
+| 63   | PearlescentMoon    | 0.49   | ▼0.06  |
+| 64   | DanTDM             | 0.48   | ▼0.06  |
+| 65   | BadBoyHalo         | 0.43   | ▼0.28  |
+| 66   | AntVenom           | 0.41   | ▲0.15  |
+| 67   | sylvee_            | 0.33   | ▼0.12  |
+| 68   | Blushi             | 0.26   | ▼0.05  |
+| 69   | CaptainPuffy       | 0.26   | ▼0.06  |
+| 70   | ShubbleYT          | 0.24   | ▼0.06  |
+| 71   | falsesymmetry      | 0.20   | ▼0.06  |
+| 72   | Michaelmcchill     | 0.20   | ▼0.08  |
+| 73   | JackManifoldTV     | 0.20   | ▼0.10  |
+| 74   | Skeppy             | 0.14   | ▼0.44  |
+| 75   | KreekCraft         | 0.11   | ▼0.02  |
+| 76   | GeminiTay          | 0.05   | ▼0.07  |
+| 77   | KaraCorvus         | 0.01   | ▼0.04  |
+| 78   | OrionSound         | \-0.16 | ▼0.06  |
+| 79   | impulseSV          | \-0.20 | ▼0.01  |
+| 80   | DisguisedToast1    | \-0.22 | ▼0.02  |
+| 81   | MiniMuka           | \-0.27 | ▼0.07  |
+| 82   | Spifey             | \-0.28 | ▼0.07  |
+| 83   | F1NN5TER           | \-0.29 | ▼0.07  |
+| 84   | Jameskii           | \-0.30 | ▼0.07  |
+| 85   | Slimecicle         | \-0.31 | ▼0.07  |
+| 86   | vGumiho            | \-0.36 | ▼0.05  |
+| 87   | The_Eret           | \-0.43 | ▼0.17  |
+| 88   | Renthedog          | \-0.49 | ▼0.07  |
+| 89   | KarlJacobs         | \-0.53 | ▼0.07  |
+| 90   | GeeNelly           | \-0.59 | ▼0.06  |
+| 91   | Snifferish         | \-0.62 | ▲0.23  |
+| 92   | aimsey             | \-0.62 | ▼0.04  |
+| 93   | KryticZeuz         | \-0.65 | ▲0.01  |
+| 94   | iJevin             | \-0.71 | ▼0.07  |
+| 95   | GoodTimeWithScar   | \-0.72 | ▼0.07  |
+| 96   | ElainaExe          | \-0.85 | ▼0.21  |
+| 97   | BaboAbe            | \-0.89 | ▼0.03  |
+| 98   | Wolv21             | \-0.92 | ▼0.07  |
+| 99   | Quackity           | \-1.04 | ▼0.07  |
+| 100  | Jestanii           | \-1.09 | ▼0.07  |
+| 101  | KatherineElizabeth | \-1.10 | ▼0.07  |
+| 102  | GizzyGazza         | \-1.13 | ▼0.06  |
+| 103  | TankMatt           | \-1.13 | ▼0.07  |
+| 104  | BdoubleO100        | \-1.24 | ▼0.03  |
+| 105  | Magistrex          | \-1.31 | ▼0.06  |
+| 106  | LDShadowLady       | \-1.36 | ▼0.06  |
+| 107  | yammy_xox          | \-1.37 | ▼0.06  |
+| 108  | Kkatamina_         | \-1.52 | ▼0.04  |
+| 109  | Wahzdah            | \-1.58 | ▼0.07  |
+| 110  | BBPaws             | \-1.63 | ▼0.07  |
+| 111  | ludwigahgren       | \-1.64 | ▼0.04  |
+| 112  | VapeKit            | \-1.74 | ▼0.06  |
+| 113  | DarkEyebrows       | \-1.97 | 0.00   |
+| 114  | ConnorEatsPants    | \-1.97 | ▼0.07  |
+| 115  | Sykkuno            | \-2.04 | ▼0.04  |
+| 116  | ItsJustOriah       | \-2.11 | ▼0.06  |
+| 117  | NettyPlays         | \-2.32 | ▼0.07  |
+| 118  | JackSucksAtLife    | \-2.59 | ▼0.07  |
+| 119  | Nihachu            | \-2.64 | ▼0.07  |
+| 120  | ItsValkyrae        | \-3.06 | ▼0.05  |
+| 121  | JamesTurner        | \-3.14 | ▼0.06  |
+| 122  | MythicalSausage    | \-3.15 | 0.00   |
+| 123  | GamerBurry         | \-3.35 | ▼0.06  |
+| 124  | IHasCupquake       | \-3.50 | ▼0.06  |
+| 125  | JamesDoesMining    | \-3.73 | ▼0.05  |
+| 126  | MysterySalesman    | \-3.86 | ▼0.06  |
+| 127  | JOEYGRACEFFA       | \-3.88 | ▼0.06  |
+| 128  | TeanaKitten        | \-3.91 | ▼0.05  |
+| 129  | LaurenZSide        | \-4.12 | ▼0.06  |
+| 130  | DraconiteDragon    | \-4.13 | ▼0.05  |
+| 131  | JamesCharles       | \-4.24 | ▼0.06  |
+| 132  | Vixella            | \-4.25 | ▼0.06  |
+| 133  | VoiceoverPete      | \-4.26 | ▼0.06  |
+| 134  | Drgluon            | \-4.54 | ▼0.06  |
+| 135  | Kontuz             | \-4.56 | ▼0.06  |
+| 136  | ItsFunneh          | \-4.62 | ▼0.05  |
+| 137  | RIPmika            | \-4.73 | ▼0.07  |
+| 138  | Marielitai         | \-5.13 | ▼0.06  |
+| 139  | Yeetdaisie         | \-5.20 | ▼0.06  |
+| 140  | ToxxxicSupport     | \-5.24 | ▼0.06  |
+| 141  | iicBunnyx          | \-6.00 | ▼0.06  |
+| 142  | Plumbella          | \-7.70 | ▼0.06  |
+| 143  | Steph0sims         | \-8.28 | ▼0.06  |
