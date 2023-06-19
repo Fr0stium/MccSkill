@@ -1,4 +1,4 @@
-[GitHub](https://github.com/02Naitsirk/MccSkill) / [Documentation](https://www.reddit.com/r/MinecraftChampionship/comments/pd2moc/a_mathematical_model_that_gives_the_probability/)
+[GitHub]((https://github.com/Fr0stium/mcc_logit_model)) / [Documentation](https://www.reddit.com/r/MinecraftChampionship/comments/pd2moc/a_mathematical_model_that_gives_the_probability/)
 
 **Last updated: June 19, 2023 (MCC 31)**
 
